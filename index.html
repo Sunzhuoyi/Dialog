@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="./dialog.css">
+</head>
+<body>
+<div class="body-content">
+    <button
+            id="showDialog"
+            onclick="Dialog.show(config)"
+            class="showDialog"
+    >
+        show dialog
+    </button>
+</div>
+
+<script src="./Dialog.js"></script>
+<script>
+    let config = {
+        title: "Hello Amino",
+        content: "I am a front end. I look forward to working with you.",
+        btns: ["Yes", "No"],
+        confirm: function () {
+            alert('Thanks')
+        },
+        cancel: function () {
+            alert(`It would be very pleasant if I could receive suggestions for improvement.
+                                                              Email: 2528373040@qq.com
+                                                              TEL: 18317177635`)
+        }
+    };
+</script>
+
+</body>
+</html>
